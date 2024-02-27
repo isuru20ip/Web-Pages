@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Test</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="main bg-success-subtle">
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="col-10 offset-1 col-lg-6 offset-lg-3 my-5 card rounded-0 shadow shadow-lg ">
+                <div class="row">
+
+                    <div class=" col-12 p-3">
+                        <div class="row gy-3">
+
+                            <div class="col-12">
+                                <h2> Add Products</h2>
+                            </div>
+
+                            <div class=" col-12 modal">
+                                <div class=" fw-bold text-center rounded-1 error-bg">
+                                   <span> Error</span>
+                                </div>
+                            </div>
+
+                            <div class="col-12 fw-bold">
+                                <label for="pname" class=" form-label">Product Name</label>
+                                <input type="text" class=" form-control rounded-0 border-black" id="pname">
+                            </div>
+
+
+                            <div class=" col-12 fw-bold">
+                                <label for="price" class=" form-label">Price</label>
+                                <input type="text" class=" form-control rounded-0 border-black" id="price">
+                            </div>
+
+                            <div class="col-12 fw-bold">
+                                <label for="dfee" class=" form-label">Delivery Fee</label>
+                                <input type="text" class=" form-control rounded-0 border-black" id="dfee">
+                            </div>
+
+                            <div class=" col-12 fw-bold">
+                                <label for="qty" class=" form-label">Qty</label>
+                                <input type="number" class=" form-control rounded-0 border-black" id="qty">
+                            </div>
+
+                            <div class=" col-12 fw-bold">
+                                <label for="dec" class=" form-label">Description</label>
+                                <textarea class=" form-control rounded-0 border-black" id="dec" cols="30" rows="5"></textarea>
+                            </div>
+
+
+                            <div class="col-12 fw-bold">
+                                <label for="cat" class=" form-label ">Category</label>
+                                <select name="" id="cat" class=" form-select rounded-0 border-black">
+                                    <option value="0">Select Your Category</option>
+
+                                </select>
+                            </div>
+
+                            <div class="col-12 fw-bold">
+                                <label class=" form-label">Images</label>
+                            </div>
+
+                            <div class="col-12">
+                                <div class="row gy-2">
+
+                                    <div class="col-12 text-sm-center col-xl-12">
+                                        <label for="img"><img src="file-img.png" class=" file-bg file-bg-sm" id="i0"></label>
+                                    </div>
+
+                                    <div class="col-12 text-sm-center col-xl-12">
+                                        <label for="img"><img src="file-img.png" class=" file-bg file-bg-sm" id="i1"></label>
+                                    </div>
+
+                                    <div class="col-12 text-sm-center col-xl-12">
+                                        <label for="img"><img src="file-img.png" class=" file-bg file-bg-sm" id="i2"></label>
+                                    </div>
+
+                                    <input type="file" class=" form-control d-none" id="img" multiple onclick="addPimgeView();" />
+                                </div>
+                            </div>
+
+                            <div class="col-12 fw-bold text-end">
+                               <button class=" col-2 btn btn-primary fw-bold rounded-0 border-black">Add Product</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>
